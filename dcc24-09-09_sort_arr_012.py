@@ -5,9 +5,11 @@ while i<=c:
     if a[i] == 0:
         a[b],a[i] = a[i],a[b]
         b += 1
+        i += 1
     elif a[i] == 2:
         a[c],a[i] = a[i], a[c]
         c -= 1
-    i += 1
+    else:
+        i += 1
 print(a)
 
